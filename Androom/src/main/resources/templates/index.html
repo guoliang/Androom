@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorator="layout_main">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="container">
+        <div class="row">
+            <div id="currentVisitorsContainer" class="col-md-6"></div>
+            <div id="pastVisitorContainer" class="col-md-6"></div>
+        </div>
+        
+        <div id="staticContainer">
+            <div class="btn-extended" id="registerVisitor"></div>
+            <div class="btn-extended" id="deregisterVisitor"></div>
+        </div>
+        <script src="/js/bundle.js"></script>
+    </div>
+</div>
+</body>
+</html>

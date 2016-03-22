@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8" />
+    <title layout:title-pattern="$DECORATOR_TITLE - $CONTENT_TITLE">Visiture</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Visiture</h1>
+        <h2>A small web application</h2>
+    </header>
+
+    <div layout:fragment="content"></div>
+
+    <footer>
+        <p>By Leung Wong 2016</p>
+    </footer>
+</div>
+</body>
+</html>
